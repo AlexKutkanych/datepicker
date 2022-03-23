@@ -14,3 +14,60 @@ a {
 * {
   box-sizing: border-box;
 }
+
+/* TODO: move this to separate file */
+.custom-input-button {
+  width: 330px;
+  position: relative;
+  border-radius: 100px;
+  background: #F8F6F5;
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+  padding: 15px 20px;
+  text-align: left;
+  border: 1px solid #F8F6F5;
+}
+
+.custom-input-button::after {
+  content: '';
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  background: url('/chevron.svg') no-repeat;
+  width: 15px;
+  height: 10px;
+}
+
+.custom-popper > div > div {
+  border: none;
+  border-radius: 0;
+  background: transparent;
+}
+
+.custom-popper .react-datepicker__triangle {
+  display: none;
+}
+
+.custom-popper .react-datepicker__header {
+  background: inherit;
+  border-bottom: none;
+}
+
+.custom-popper .react-datepicker__month-container {
+  width: 330px;
+  padding: 20px;
+  background: #F8F6F5;
+  border-radius: 30px;
+  border: 1px solid #CCCCCC; 
+}
+
+.custom-popper .react-datepicker__day-names,
+.custom-popper .react-datepicker__week {
+  display: flex;
+  justify-content: space-between;
+}
