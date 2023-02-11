@@ -117,7 +117,7 @@ const CustomDatepicker: NextPage = () => {
   const CustomDatepickerSelectButton = forwardRef(
     ({ value, onClick }: DetailedHTMLProps<ButtonHTMLAttributes<HTMLButtonElement>, unknown>, ref: Ref<HTMLButtonElement>) => (
       <CustomInputButton onClick={onClick} ref={ref} datepickerOpened={datepickerOpened} className="custom-input-button">
-        {value || "Date Picker"}
+        {value || "Custom Datepicker"}
       </CustomInputButton>
     ));
 
